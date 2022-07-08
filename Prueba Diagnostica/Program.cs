@@ -83,7 +83,7 @@ namespace Prueba_Diagnostica
 
                 if (APERTURA.Length > end && init > 0)
                 {
-                    Console.WriteLine("Cumple la condicion APERTURA" + APERTURA[indice]);
+                    Console.WriteLine("Cumple la condicion APERTURA MAXIMO = " + APERTURA[indice]);
                     
                     op = false;
                     break;
@@ -119,7 +119,7 @@ namespace Prueba_Diagnostica
 
                 if (MAXIMO.Length > end && init > 0)
                 {
-                    Console.WriteLine("Cumple la condicion MAXIMO" + MAXIMO[indice]);
+                    Console.WriteLine("Cumple la condicion MAXIMO MAXIMO = " + MAXIMO[indice]);
 
                     op = false;
                     break;
@@ -133,8 +133,75 @@ namespace Prueba_Diagnostica
             #endregion
 
 
+            #region
 
+            op = true;
 
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (MINIMO[i].Equals(MINIMOOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (MINIMO.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion MINIMO MAXIMO = " + MINIMO[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
+
+            #region
+
+            op = true;
+
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (CIERRE[i].Equals(CIERREOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (MAXIMO.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion CIERRE MAXIMO = " + CIERRE[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
             Console.ReadKey();
 
 
