@@ -57,6 +57,11 @@ namespace Prueba_Diagnostica
             Array.Sort(MINIMOOR);
             Array.Sort(CIERREOR);
 
+            Array.Reverse(APERTURAOR);
+            Array.Reverse(MAXIMOOR);
+            Array.Reverse(MINIMOOR);
+            Array.Reverse(CIERREOR);
+
 
 
             #region
@@ -71,7 +76,7 @@ namespace Prueba_Diagnostica
                 for (int i = 0; i < 200; i++)
                 {
                 
-                    if (APERTURA[i].Equals(APERTURAOR[regresivamayor]))
+                    if (APERTURA[i].Equals(APERTURA[regresivamayor]))
                     {
                         indice = i;
                     }
@@ -202,6 +207,13 @@ namespace Prueba_Diagnostica
                 }
             }
             #endregion
+
+
+
+
+
+
+
             Console.ReadKey();
 
 
