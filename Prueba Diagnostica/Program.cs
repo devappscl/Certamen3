@@ -36,8 +36,9 @@ namespace Prueba_Diagnostica
                 contador++;
             }
 
-
+            //MOSTRAR EL MAYOR VALOR DE CADA UNA DE LAS LISTAS.
             buscaMayor(datos);
+
 
             Console.ReadKey();
 
