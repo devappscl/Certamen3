@@ -53,6 +53,8 @@ namespace Prueba_Diagnostica
             }
             for (int i = 0; i < 200; i++)
             {
+
+
                 Console.WriteLine(arrayData[i].APERTURA + " " + arrayData[i].MAXIMO + " " + arrayData[i].MINIMO + " " + arrayData[i].CIERRE);
             }
 
