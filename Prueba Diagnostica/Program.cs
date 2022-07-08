@@ -43,6 +43,7 @@ namespace Prueba_Diagnostica
             Console.ReadKey();
 
 
+
         }
 
         //Busca mayor en la lista de objetos.
@@ -50,7 +51,8 @@ namespace Prueba_Diagnostica
         {
             foreach (var item in datos)
             {
-                
+                //ACTUALIZACION DE PRUEBA OSCAR*****
+                Console.WriteLine(item.MAXIMO);
             }
         }
 
