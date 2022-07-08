@@ -52,6 +52,7 @@ namespace Prueba_Diagnostica
             foreach (var item in datos)
             {
                 //ACTUALIZACION DE PRUEBA OSCAR ------->*****
+                //Segunda prueba*********
                 Console.WriteLine(item.MAXIMO);
             }
         }
