@@ -62,8 +62,8 @@ namespace Prueba_Diagnostica
             Array.Reverse(MINIMOOR);
             Array.Reverse(CIERREOR);
 
-
-
+            //MAXIMOS
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAXIMOS ++++++++++++++++++++++++++++++++++++++++++++++++++++++");
             #region
             int indice = 0;
             int regresivamayor = 199;
@@ -173,6 +173,7 @@ namespace Prueba_Diagnostica
             }
             #endregion
 
+
             #region
 
             op = true;
@@ -208,9 +209,150 @@ namespace Prueba_Diagnostica
             }
             #endregion
 
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++ MINIMOS ++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+
+            // MINIMOS
+            op = true;
+
+            #region
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (APERTURA[i].Equals(APERTURAOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (APERTURA.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion APERTURA MINIMO = " + APERTURA[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
 
 
+            #region
 
+            op = true;
+
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (MAXIMO[i].Equals(MAXIMOOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (MAXIMO.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion MAXIMO MINIMO = " + MAXIMO[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
+
+
+            #region
+
+            op = true;
+
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (MINIMO[i].Equals(MINIMOOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (MINIMO.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion MINIMO MINIMO = " + MINIMO[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
+
+
+            #region
+
+            op = true;
+
+            while (op)
+            {
+
+                for (int i = 0; i < 200; i++)
+                {
+
+                    if (CIERRE[i].Equals(CIERREOR[regresivamayor]))
+                    {
+                        indice = i;
+                    }
+
+                }
+
+                int init = indice - 10;
+                int end = indice + 10;
+
+                if (MAXIMO.Length > end && init > 0)
+                {
+                    Console.WriteLine("Cumple la condicion CIERRE MINIMO = " + CIERRE[indice]);
+
+                    op = false;
+                    break;
+                }
+                else
+                {
+                    regresivamayor = regresivamayor - 1;
+                    op = true;
+                }
+            }
+            #endregion
 
 
 
